@@ -1,0 +1,87 @@
+@media only screen and (max-width: 800px) {
+  .project-header {
+    font-size: var(--section-heading-size-mobile) !important;
+  }
+  .project-header > p > span {
+    font-size: 4.5rem !important;
+  }
+  .project {
+    display: flex;
+    background: green;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .project {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .project-cards {
+    background: red;
+    margin: "0 auto";
+  }
+}
+
+.project-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  text-align: center;
+  font-size: var(--section-heading-size);
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.project-header > span {
+  color: var(--section-color);
+}
+
+.grid-col-span {
+  grid-column: span 2 !important;
+}
+.hover-effect:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.project {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* One column layout */ /* Three rows: top, middle, and bottom */
+  justify-items: start; /* Align items to the start horizontally */
+  gap: 1.2em; /* Space between items */
+  margin: 0 auto; /* Center container horizontally and add vertical margins */
+  max-width: 980px;
+}
+.project-cards:nth-child(4) {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.project-cards {
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: 1px solid var(--section-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-cards:hover {
+  transform: scale(1.02);
+  box-shadow: var(--section-color) 0px 0px 10px;
+}
+
+/* .project-cards:hover{
+  box-shadow: 0 0 5px rgba(255,255,255,1);
+  scale: 105;
+} */
+.project-desc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.project-desc-body {
+  font-size: 14px;
+  margin: 10px 0;
+}
