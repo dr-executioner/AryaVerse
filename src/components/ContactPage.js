@@ -19,7 +19,7 @@ const jokeList = [
 
 const ContactPage = () => {
 
-  const [joke, setJoke] = useState(
+  const [joke] = useState(
     jokeList[Math.floor(Math.random() * jokeList.length)]
   );
   const [name, setName] = useState();
