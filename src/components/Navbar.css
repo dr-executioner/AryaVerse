@@ -11,12 +11,13 @@
 }
 
 .navbar-container {
-  color: white;
+  color: black;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
+  font-weight: 500;
   width: 100%;
-  border: 1px solid;
 }
 
 .navbar-left {
@@ -28,14 +29,20 @@
 }
 
 .navbar-right-options {
-  color: var(--section-grey-color);
+  color: black;
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-right: 10px;
+}
+.navbar-right-options > a {
+  padding: 8px 10px;
+  border-radius: 8px;
 }
 
 .navbar-right-options > a:hover {
   color: var(--section-color) !important;
+  background: black;
 }
 
 .navbar-right-menubar {
@@ -52,9 +59,10 @@
   top: 0%;
   right: 0%;
   width: 100vw;
-  height: 85vh;
+  height: 100%;
   background-color: #121212;
   z-index: 1;
+  color: white;
 }
 
 .navbar-menu-options > svg {

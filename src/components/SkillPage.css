@@ -7,7 +7,6 @@
   }
   #myCanvasContainer > canvas {
     width: 100% !important;
-    height: 40vh !important;
   }
   .skill-right,
   .skill-left {

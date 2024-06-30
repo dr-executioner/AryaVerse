@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import ToolTip from './ToolTip';
+import ToolTip from "./ToolTip";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -10,8 +10,11 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-left">
-        <a href={process.env.PUBLIC_URL + '/Aarjya_Frontend.pdf'} download="AryaResume.pdf">
-        <ToolTip text="Download Resume">arya.bharadwaz</ToolTip>
+        <a
+          href={process.env.PUBLIC_URL + "/Aarjya_Frontend.pdf"}
+          download="AryaResume.pdf"
+        >
+          <ToolTip text="Download Resume">arya.bharadwaz</ToolTip>
         </a>
       </div>
       <div className="navbar-right-menubar">
@@ -65,7 +68,12 @@ const Navbar = () => {
             </Link>
           </div>
         ) : (
-          <MenuIcon onClick={() => setIsMenuOpen(!isMenuOpen)} />
+          <MenuIcon
+            style={{
+              margin: "10px 10px 0 0",
+            }}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
         )}
       </div>
       <div className="navbar-right-options">

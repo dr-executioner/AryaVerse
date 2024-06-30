@@ -25,12 +25,17 @@
 
 .home-page-header {
   height: 60px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   position: sticky;
-  top: 0px;
-  background: #121212;
+  top: 10px;
+  background: var(--section-color);
   z-index: 999;
+  color: black;
+  border-radius: 8px;
 }
 
 .home-page {
