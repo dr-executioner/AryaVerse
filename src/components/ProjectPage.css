@@ -54,6 +54,9 @@
   margin: 0 auto; /* Center container horizontally and add vertical margins */
   max-width: 980px;
 }
+.project-cards {
+  background: black;
+}
 .project-cards:nth-child(4) {
   grid-column-start: 1;
   grid-row-start: 2;

@@ -5,7 +5,8 @@
 
 body {
   width: 100%;
-  background-image: url("./grid.jpg");
+  background: black;
+  /* background-image: url("./grid.jpg"); */
   background-size: auto;
   background-position: center;
 }
